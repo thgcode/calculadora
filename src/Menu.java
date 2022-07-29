@@ -57,7 +57,6 @@ public class Menu {
 
     private void fazSubtracao() {
         int primeiroNumero = perguntaInt("Qual o primeiro número que você deseja subtrair?");
-
         int segundoNumero = perguntaInt("Qual o segundo número que você deseja subtrair?");
 
         double resultado = calculadora.calculaSubtracao(primeiroNumero, segundoNumero);
