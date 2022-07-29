@@ -21,12 +21,7 @@ public class Calculadora {
     }
 
     public double calculaDivisao(double primeiroNumero, double segundoNumero) {
-        if(segundoNumero == 0) {
-            System.out.println("O segundo número da ooperação não pode ser 0.");
-            ultimoResultado = 0;
-        } else {
-            ultimoResultado = primeiroNumero / segundoNumero;
-        }
+        ultimoResultado = primeiroNumero / segundoNumero;
         return ultimoResultado;
     }
 

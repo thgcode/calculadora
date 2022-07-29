@@ -79,9 +79,13 @@ public class Menu {
         int primeiroNumero = perguntaInt("Qual o primeiro número que você deseja dividir?");
         int segundoNumero = perguntaInt("Qual o segundo número que você deseja dividir?");
 
-        double resultado = calculadora.calculaDivisao(primeiroNumero, segundoNumero);
+        if (segundoNumero == 0) {
+            System.out.println("O segundo número da operação não pode ser 0.");
+        } else {
+            double resultado = calculadora.calculaDivisao(primeiroNumero, segundoNumero);
 
-        System.out.println("Sua multiplicação deu " + resultado + ".");
+            System.out.println("Sua divisão deu " + resultado + ".");
+        }
     }
 
     private void mostraUltimoResultado() {
