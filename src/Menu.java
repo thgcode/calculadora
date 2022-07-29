@@ -16,8 +16,9 @@ public class Menu {
             System.out.println("Menu da calculadora:");
             System.out.println("Digite 1 para fazer uma soma.");
             System.out.println("Digite 2 para fazer uma subtração.");
-            System.out.println("Digite 3 para ver o último resultado calculado.");
-            System.out.println("Digite 4 para sair.");
+            System.out.println("Digite 3 para fazer uma multiplicação.");
+            System.out.println("Digite 4 para ver o último resultado calculado.");
+            System.out.println("Digite 5 para sair.");
             int opcao = perguntaInt("Qual sua opção?");
 
             switch (opcao) {
@@ -28,9 +29,11 @@ public class Menu {
                     fazSubtracao();
                     break;
                 case 3:
+                    fazMultiplicacao();
+                case 4:
                     mostraUltimoResultado();
                     break;
-                case 4:
+                case 5:
                     continua = false;
             }
         }
@@ -56,6 +59,15 @@ public class Menu {
 
         System.out.println("Sua subtração deu " + resultado + ".");
 
+    }
+
+    private void fazMultiplicacao() {
+        int primeiroNumero = perguntaInt("Qual o primeiro número que você deseja multiplicar?");
+        int segundoNumero = perguntaInt("Qual o segundo número que você deseja multiplicar?");
+
+        int resultado = calculadora.calculaMultiplicacao(primeiroNumero, segundoNumero);
+
+        System.out.println("Sua multiplicação deu " + resultado + ".");
     }
 
     private void mostraUltimoResultado() {

@@ -15,6 +15,11 @@ public class Calculadora {
         return ultimoResultado;
     }
 
+    public int calculaMultiplicacao(int primeiroNumero, int segundoNumero) {
+        ultimoResultado = primeiroNumero * segundoNumero;
+        return ultimoResultado;
+    }
+
     public int getUltimoResultado() {
         return ultimoResultado;
     }
