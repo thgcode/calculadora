@@ -54,7 +54,7 @@ public class Menu {
 
         int resultado = calculadora.calculaSubtracao(primeiroNumero, segundoNumero);
 
-        System.out.println("Sua soma deu " + resultado + ".");
+        System.out.println("Sua subtração deu " + resultado + ".");
 
     }
 
