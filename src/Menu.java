@@ -31,6 +31,7 @@ public class Menu {
                     break;
                 case 3:
                     fazMultiplicacao();
+                    break;
                 case 4:
                     fazDivisao();
                     break;
