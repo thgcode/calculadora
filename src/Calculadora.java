@@ -1,26 +1,31 @@
 public class Calculadora {
-    private int ultimoResultado;
+    private double ultimoResultado;
 
     public Calculadora() {
         ultimoResultado = 0;
     }
 
-    public int calculaSoma(int primeiroNumero, int segundoNumero) {
+    public double calculaSoma(int primeiroNumero, int segundoNumero) {
         ultimoResultado = primeiroNumero + segundoNumero;
         return ultimoResultado;
     }
 
-    public int calculaSubtracao(int primeiroNumero, int segundoNumero) {
+    public double calculaSubtracao(int primeiroNumero, int segundoNumero) {
         ultimoResultado = primeiroNumero - segundoNumero;
         return ultimoResultado;
     }
 
-    public int calculaMultiplicacao(int primeiroNumero, int segundoNumero) {
+    public double calculaMultiplicacao(int primeiroNumero, int segundoNumero) {
         ultimoResultado = primeiroNumero * segundoNumero;
         return ultimoResultado;
     }
 
-    public int getUltimoResultado() {
+    public double calculaDivisao(double primeiroNumero, double segundoNumero) {
+        ultimoResultado = primeiroNumero / segundoNumero;
+        return ultimoResultado;
+    }
+
+    public double getUltimoResultado() {
         return ultimoResultado;
     }
 }

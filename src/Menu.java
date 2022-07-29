@@ -45,7 +45,7 @@ public class Menu {
         int primeiroNumero = perguntaInt("Qual o primeiro número que você deseja somar?");
         int segundoNumero = perguntaInt("Qual o segundo número que você deseja somar?");
 
-        int resultado = calculadora.calculaSoma(primeiroNumero, segundoNumero);
+        double resultado = calculadora.calculaSoma(primeiroNumero, segundoNumero);
 
         System.out.println("Sua soma deu " + resultado + ".");
     }
@@ -55,7 +55,7 @@ public class Menu {
 
         int segundoNumero = perguntaInt("Qual o segundo número que você deseja subtrair?");
 
-        int resultado = calculadora.calculaSubtracao(primeiroNumero, segundoNumero);
+        double resultado = calculadora.calculaSubtracao(primeiroNumero, segundoNumero);
 
         System.out.println("Sua subtração deu " + resultado + ".");
 
@@ -65,13 +65,13 @@ public class Menu {
         int primeiroNumero = perguntaInt("Qual o primeiro número que você deseja multiplicar?");
         int segundoNumero = perguntaInt("Qual o segundo número que você deseja multiplicar?");
 
-        int resultado = calculadora.calculaMultiplicacao(primeiroNumero, segundoNumero);
+        double resultado = calculadora.calculaMultiplicacao(primeiroNumero, segundoNumero);
 
         System.out.println("Sua multiplicação deu " + resultado + ".");
     }
 
     private void mostraUltimoResultado() {
-        int ultimoResultado = calculadora.getUltimoResultado();
+        double ultimoResultado = calculadora.getUltimoResultado();
 
         System.out.println("O último resultado calculado pela calculadora foi " + ultimoResultado + ".");
     }
