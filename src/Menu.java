@@ -18,8 +18,9 @@ public class Menu {
             System.out.println("Digite 2 para fazer uma subtração.");
             System.out.println("Digite 3 para fazer uma multiplicação.");
             System.out.println("Digite 4 para fazer uma divisão.");
-            System.out.println("Digite 5 para ver o último resultado calculado.");
-            System.out.println("Digite 6 para sair.");
+            System.out.println("Digite 5 para calcular a raiz quadrada de um número.");
+            System.out.println("Digite 6 para ver o último resultado calculado.");
+            System.out.println("Digite 7 para sair.");
             int opcao = perguntaInt("Qual sua opção?");
 
             switch (opcao) {
@@ -36,9 +37,12 @@ public class Menu {
                     fazDivisao();
                     break;
                 case 5:
-                    mostraUltimoResultado();
+                    fazRaiz();
                     break;
                 case 6:
+                    mostraUltimoResultado();
+                    break;
+                case 7:
                     continua = false;
             }
         }
@@ -84,6 +88,18 @@ public class Menu {
             double resultado = calculadora.calculaDivisao(primeiroNumero, segundoNumero);
 
             System.out.println("Sua divisão deu " + resultado + ".");
+        }
+    }
+
+    private void fazRaiz() {
+        int numero = perguntaInt("Qual o número que você deseja calcular a raiz quadrada?");
+
+        if (numero < 0) {
+            System.out.println("A raiz quadrada de números negativos não existe.");
+        } else {
+            double resultado = calculadora.calculaRaiz(numero);
+
+            System.out.println("Sua raiz deu " + resultado + ".");
         }
     }
 

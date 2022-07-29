@@ -25,6 +25,11 @@ public class Calculadora {
         return ultimoResultado;
     }
 
+    public double calculaRaiz(int numero) {
+        ultimoResultado = Math.sqrt(numero);
+        return ultimoResultado;
+    }
+
     public double getUltimoResultado() {
         return ultimoResultado;
     }
