@@ -10,6 +10,11 @@ public class Calculadora {
         return ultimoResultado;
     }
 
+    public int calculaSubtracao(int primeiroNumero, int segundoNumero) {
+        ultimoResultado = primeiroNumero - segundoNumero;
+        return ultimoResultado;
+    }
+
     public int getUltimoResultado() {
         return ultimoResultado;
     }
